@@ -1,0 +1,12 @@
+**/.classpath
+**/.project
+**/.settings/
+*.log
+target/
+project/
+**/.idea/
+*.iml
+*.jar
+*.zip
+
+
