@@ -4,9 +4,9 @@
 
 This projects provide some classes to simplify work with Postgres json data type in hibernate. It includes extended postgres dialect and objects for type def support. This small library allows to store in json field both HashMap(with any nesting level) and custom objects. Also it supports scheme validation and update
 
-### requirements ###
+### Requirements ###
 
-Library expects that in your project you have following libraries
+Library expects that in your project you have following dependencies
 * hibernate core(4.3 or higher)
 * jackson (1.9.13) want to add opportunity to support custom converter
 * PostgreSQL driver(9.2 or higher)
