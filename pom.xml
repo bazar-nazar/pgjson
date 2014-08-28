@@ -111,7 +111,8 @@
     </licenses>
     <scm>
         <url>https://github.com/bazar-nazar/pgjson</url>
-        <connection>scm:git:git://github.com/bazar-nazar/pgjson.git</connection>
+        <developerConnection>scm:git:git@github.com:bazar-nazar/pgjson.git</developerConnection>
+        <connection>scm:git:git@github.com:bazar-nazar/pgjson.git</connection>
     </scm>
     <developers>
         <developer>
