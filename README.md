@@ -13,6 +13,13 @@ Library expects that in your project you have following dependencies
 
 ### How to use ###
 * include library into your project
+```xml
+        <dependency>
+            <groupId>com.github.bazar-nazar</groupId>
+            <artifactId>pgjson</artifactId>
+            <version>1.0</version>
+        </dependency>
+```
 * set com.bazar.pgjson.JsonPostgreSQLDialect as dialect for hibernate
 * if you want to store custom object
     * create object that extends com.bazar.pgjson.PGJsonObject
