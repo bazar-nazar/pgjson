@@ -15,7 +15,7 @@ Library expects that in your project you have following dependencies
 * include library into your project
 ```xml
         <dependency>
-            <groupId>com.bazarnzar</groupId>
+            <groupId>com.bazarnazar</groupId>
             <artifactId>pgjson</artifactId>
             <version>1.1</version>
         </dependency>
