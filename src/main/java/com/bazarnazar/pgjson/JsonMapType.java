@@ -1,4 +1,4 @@
-package com.bazar.pgjson;
+package com.bazarnazar.pgjson;
 
 /**
  * Created by Bazar on 27.08.14.

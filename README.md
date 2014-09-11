@@ -15,17 +15,17 @@ Library expects that in your project you have following dependencies
 * include library into your project
 ```xml
         <dependency>
-            <groupId>com.github.bazar-nazar</groupId>
+            <groupId>com.bazarnzar</groupId>
             <artifactId>pgjson</artifactId>
-            <version>1.0</version>
+            <version>1.1</version>
         </dependency>
 ```
-* set com.bazar.pgjson.JsonPostgreSQLDialect as dialect for hibernate
+* set com.bazarnazar.pgjson.JsonPostgreSQLDialect as dialect for hibernate
 * if you want to store custom object
-    * create object that extends com.bazar.pgjson.PGJsonObject
+    * create object that extends com.bazarnazar.pgjson.PGJsonObject
     * add this object as type in @Type to your @Entity and your annotate field or getter for this type where object is stored
 * if you want to store HashMap
-    * simply add com.bazar.pgjson.JsonMapType as type in @Type to your @Entity and your annotate field or getter for this type where Hash map is stored
+    * simply add com.bazarnazar.pgjson.JsonMapType as type in @Type to your @Entity and your annotate field or getter for this type where Hash map is stored
 
 ### WARNING!!! ####
 * If you have native queries in your project, be sure that you adding entity for this query

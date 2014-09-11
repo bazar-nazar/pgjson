@@ -1,4 +1,4 @@
-package com.bazar.pgjson;
+package com.bazarnazar.pgjson;
 
 import org.hibernate.dialect.PostgreSQL9Dialect;
 
