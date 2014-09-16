@@ -66,7 +66,7 @@ public class PGJsonObject implements UserType {
     @Override
     public void nullSafeSet(PreparedStatement preparedStatement, Object value, int index, SessionImplementor sessionImplementor) throws HibernateException, SQLException {
         if (value == null) {
-            preparedStatement.setNull(index, Types.JAVA_OBJECT);
+            preparedStatement.setNull(index, Types.NULL);
             return;
         }
         String jsonString = null;
