@@ -19,7 +19,7 @@ import java.sql.Types;
  */
 public class PGJsonObject implements UserType {
 
-    private static final ObjectMapper objectMapper = new ObjectMapper();
+    protected static final ObjectMapper objectMapper = new ObjectMapper();
 
     static {
         objectMapper.configure(DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);
