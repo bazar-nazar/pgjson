@@ -25,11 +25,11 @@ Library expects that in your project you have following dependencies
     * create object that extends com.bazarnazar.pgjson.PGJsonObject
     * add this object as type in @Type to your @Entity and your annotate field or getter for this type where object is stored
 * if you want to store collection of objects extend PgJsonCollection and override `getReturnedTypeReference()` like this
-    ```
+```java
     protected TypeReference getReturnedTypeReference() {
         return new TypeReference<Map<String, SomeType>>() {};
     }
-    ```
+```
 * if you want to store HashMap
     * simply add com.bazarnazar.pgjson.JsonMapType as type in @Type to your @Entity and your annotate field or getter for this type where Hash map is stored
 
