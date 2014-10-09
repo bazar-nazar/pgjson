@@ -17,13 +17,19 @@ Library expects that in your project you have following dependencies
         <dependency>
             <groupId>com.bazarnazar</groupId>
             <artifactId>pgjson</artifactId>
-            <version>1.1</version>
+            <version>1.3</version>
         </dependency>
 ```
 * set com.bazarnazar.pgjson.JsonPostgreSQLDialect as dialect for hibernate
 * if you want to store custom object
     * create object that extends com.bazarnazar.pgjson.PGJsonObject
     * add this object as type in @Type to your @Entity and your annotate field or getter for this type where object is stored
+* if you want to store collection of objects extend PgJsonCollection and override `getReturnedTypeReference()` like this
+    ```
+    protected TypeReference getReturnedTypeReference() {
+        return new TypeReference<Map<String, SomeType>>() {};
+    }
+    ```
 * if you want to store HashMap
     * simply add com.bazarnazar.pgjson.JsonMapType as type in @Type to your @Entity and your annotate field or getter for this type where Hash map is stored
 
